@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4E4E4"
+        android:text="按钮1"
+        android:textColor="#0921FA"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_below="@id/btn_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn2"
+        android:text="按钮2"
+        android:textColor="#0921FA"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_below="@id/btn_2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn3"
+        android:text="按钮3"
+        android:onClick="showToast"
+        android:textColor="#FF702C"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_3"
+        android:background="@drawable/selector_orange"
+        android:layout_marginTop="10dp"
+        android:text="按钮4"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="文字1"
+        android:layout_below="@id/btn_4"
+        android:background="#FF9800"
+        android:layout_marginTop="40dp"
+        android:gravity="center"/>
+</RelativeLayout>
