@@ -8,11 +8,12 @@ import android.widget.Button;
 
 import com.iwf.helloworld.gridview.GridViewActivity;
 import com.iwf.helloworld.listview.ListViewActivity;
+import com.iwf.helloworld.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button mBtnTextView, mBtnButton, mBtnEditText, mBtnRadioButton,
-            mBtnCheckBox, mBtnImageView, mBtnListView, mBtnGridView;
+            mBtnCheckBox, mBtnImageView, mBtnListView, mBtnGridView, mBtnRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView = findViewById(R.id.btn_imageview);
         mBtnListView = findViewById(R.id.btn_listview);
         mBtnGridView = findViewById(R.id.btn_gridview);
+        mBtnRecyclerView = findViewById(R.id.btn_recyclerview);
         setListeners();
     }
 
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView.setOnClickListener(onClick);
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
+        mBtnRecyclerView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener{
@@ -72,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_gridview:
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_recyclerview:
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);
